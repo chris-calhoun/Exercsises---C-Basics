@@ -9,17 +9,21 @@ namespace Week1_Exercises
         static void Main(string[] args)
         {
             // --------------------------------------------------------------------------------------
-            // Exercise: Mask Sensitive Information
-            Console.WriteLine("Please enter a secret: ");
-            string secret = Console.ReadLine();
-            string maskedSecret = "";
-            for (int i = 0; i < secret.Count() - 4; i++)
-            {
-                maskedSecret = maskedSecret + "*";
-            }
+            // Exercise: VALIDATOR
 
-            string lastFour = secret.Substring(secret.Length - 4);
-            Console.WriteLine($"The masked secret is: {maskedSecret}{lastFour}");
+
+            // --------------------------------------------------------------------------------------
+            // Exercise: Mask Sensitive Information
+            //Console.WriteLine("Please enter a secret: ");
+            //string secret = Console.ReadLine();
+            //string maskedSecret = "";
+            //for (int i = 0; i < secret.Count() - 4; i++)
+            //{
+            //    maskedSecret = maskedSecret + "*";
+            //}
+
+            //string lastFour = secret.Substring(secret.Length - 4);
+            //Console.WriteLine($"The masked secret is: {maskedSecret}{lastFour}");
 
             // --------------------------------------------------------------------------------------
             // Exercise: Calculator
@@ -53,42 +57,74 @@ namespace Week1_Exercises
             //}
             // --------------------------------------------------------------------------------------
             // Exercise: Calculator 2.0
-            //Console.WriteLine("Please enter a mathematical operator (+,-,/,*, or ^) followed by a space and then a list of numbers separated by commas. Ex. + 2,3,4");
-            //char [] separators = { ' ', ',' };
-            //string userInput2 = Console.ReadLine();
-            //List<string> values2 = userInput2.Split(separators).ToList();
-            //string mathOperation = values2[0];
-
-            //if (mathOperation == "*")
+            //bool useCalculator = true;
+            //while (useCalculator == true)
             //{
-            //    int total = 1;
-            //    for (int i = 1; i < values2.Count; i++)
+            //    Console.WriteLine("Please enter a mathematical operator (+,-,/,*,^, or avg) followed by a space and then a list of numbers separated by commas. Ex. + 2,3,4");
+            //    char[] separators = { ' ', ',' };
+            //    string userInput2 = Console.ReadLine();
+            //    List<string> values2 = userInput2.Split(separators).ToList();
+            //    string mathOperation = values2[0];
+            //    if (mathOperation == "*")
             //    {
+            //        int total = 1;
+            //        for (int i = 1; i < values2.Count; i++)
+            //        {
 
-            //        total = total * int.Parse(values2[i]);
+            //            total = total * int.Parse(values2[i]);
+            //        }
+
+            //        Console.WriteLine(total);
+            //    }
+            //    else if (mathOperation == "^2")
+            //    {
+            //        string numsSquared = "";
+            //        for (int i = 1; i < values2.Count; i++)
+            //        {
+            //            int numSquared = int.Parse(values2[i]) * int.Parse(values2[i]);
+            //            numsSquared = numsSquared + $"{numSquared},";
+            //        }
+            //        Console.WriteLine(numsSquared);
+            //    }
+            //    else if (mathOperation == "+")
+            //    {
+            //        int total = 0;
+            //        for (int i = 1; i < values2.Count; i++)
+            //        {
+            //            total = total + int.Parse(values2[i]);
+            //        }
+
+            //        Console.WriteLine(total);
+            //    }
+            //    else if (mathOperation == "/")
+            //    {
+            //        double total = double.Parse(values2[1]);
+            //        for (int i = 1; i < values2.Count - 1; i++)
+            //        {
+            //            total = total / double.Parse(values2[i + 1]);
+            //        }
+
+            //        Console.WriteLine(total.ToString("0.##"));
+            //    }
+            //    else if (mathOperation == "avg")
+            //    {
+            //        values2.RemoveAt(0);
+            //        string[] valuesArray = values2.ToArray();
+            //        double[] doublesArray = Array.ConvertAll(valuesArray, double.Parse);
+            //        double average = doublesArray.Average();
+            //        Console.WriteLine(average.ToString("0.##"));
+            //    }
+            //    Console.WriteLine("Do you want to perform another calculator. Enter Yes or No");
+            //    string calcAgain = Console.ReadLine();
+            //    if (calcAgain == "Yes")
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        break;
             //    }
 
-            //    Console.WriteLine(total);
-            //}
-            //else if (mathOperation == "^2")
-            //{
-            //    string numsSquared = "";
-            //    for (int i = 1; i < values2.Count; i++)
-            //    {
-            //        int numSquared = int.Parse(values2[i]) * int.Parse(values2[i]);
-            //        numsSquared = numsSquared + $"{numSquared},";
-            //    }
-            //    Console.WriteLine(numsSquared);
-            //}
-            //else if (mathOperation == "+")
-            //{
-            //    int total = 0;
-            //    for (int i = 1; i < values2.Count; i++)
-            //    {
-            //        total = total + int.Parse(values2[i]);
-            //    }
-
-            //    Console.WriteLine(total);
             //}
 
             // --------------------------------------------------------------------------
